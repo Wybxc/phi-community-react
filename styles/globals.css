@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: Phi;
+  src: url(/fonts/ExoRegular.otf);
+  src: url(/fonts/SourceHanSansSairaHybridRegular.ttf);
+}
+@font-face {
+  font-family: Mina;
+  src: url(/fonts/ExoRegular.otf);
+  src: url(/fonts/SourceHanSansSairaHybridRegular.ttf);
+}
+
+* {
+  font-family: Phi;
+}
