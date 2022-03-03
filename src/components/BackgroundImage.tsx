@@ -1,3 +1,4 @@
+import Image from 'next/image'
 /**
  * 背景图像属性。
  */
@@ -28,13 +29,10 @@ const BackgroundImage: React.FC<IBackgroundImageProps> = ({
   return (
     <div
       className="fixed w-full h-full left-0 top-0 pointer-events-none transition-all duration-300 ease-in-out"
-      style={{
-        background: `#999 url(${src}) center center no-repeat fixed`,
-        backgroundSize: 'cover',
-        filter: filter,
-        zIndex: zIndex,
-      }}
-    ></div>
+      style={{ zIndex: zIndex, filter: filter }}
+    >
+      <Image src={src} layout="fill" objectFit="cover" alt="背景图片" />
+    </div>
   )
 }
 

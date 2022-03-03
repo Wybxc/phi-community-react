@@ -43,12 +43,11 @@ const Page: NextPage = () => {
           className="fixed w-full h-full flex flex-col justify-center justify-items-center"
           onClick={async () => {
             await showBlackScene()
-            // if (window.localStorage.length == 0) {
-            //   router.push('/settings')
-            // } else {
-            //   router.push('/chapter-select')
-            // }
-            router.push('/settings')
+            if (window.localStorage.length == 0) {
+              router.push('/settings')
+            } else {
+              router.push('/chapter-select')
+            }
           }}
         >
           <Image

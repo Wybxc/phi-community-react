@@ -8,7 +8,7 @@ const nextConfig = {
     disable: process.env.NODE_ENV !== 'production',
   },
   images: {
-    domains: ['repobeats.axiom.co'],
+    domains: ['repobeats.axiom.co', 'cdn.jsdelivr.net'],
   },
 }
 

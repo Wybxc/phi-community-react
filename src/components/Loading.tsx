@@ -1,11 +1,15 @@
 import BackgroundImage from './BackgroundImage'
+import React from 'react'
 import tips from '../tips.json'
 
 /**
  * 加载页面。
  */
 const Loading: React.FC = () => {
-  const randomIndex = Math.floor(Math.random() * tips.length)
+  const randomIndex = React.useMemo(
+    () => Math.floor(Math.random() * tips.length),
+    []
+  )
   return (
     <>
       <BackgroundImage filter="blur(1px) brightness(0.9)" zIndex={10} />

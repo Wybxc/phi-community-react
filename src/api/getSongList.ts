@@ -22,14 +22,11 @@ export interface ISongMetadata {
   codename: string
   artist: string
   musicFile: string
-  inRanking: number
-  atRanking: number
-  chartIN: string
-  chartAT: string
   illustration: string
   chartDesigner: string
   illustrator: string
   sliceAudioStart: string
+  [key: string]: string
 }
 
 /**
