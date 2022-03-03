@@ -8,8 +8,6 @@
   },
   "dependencies": {
     "@babel/core": "^7.17.5",
-    "@types/react-window": "^1.8.5",
-    "@types/ua-parser-js": "^0.7.36",
     "next": "latest",
     "next-pwa": "^5.4.4",
     "rc-slider": "^9.7.5",
@@ -24,6 +22,8 @@
   "devDependencies": {
     "@types/node": "17.0.4",
     "@types/react": "17.0.38",
+    "@types/react-window": "^1.8.5",
+    "@types/ua-parser-js": "^0.7.36",
     "autoprefixer": "^10.4.0",
     "eslint": "^8.10.0",
     "eslint-config-next": "^12.1.0",

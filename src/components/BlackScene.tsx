@@ -11,15 +11,15 @@ const useBlackScene = (
 ): [() => Promise<void>, () => Promise<void>, IBlackSceneProps] => {
   const [opacity, setOpacity] = React.useState(show ? 1 : 0)
 
-  const showBlackScene = async () => {
+  const showBlackScene = React.useCallback(async () => {
     setOpacity(1)
     await new Promise((resolve) => setTimeout(resolve, duration))
-  }
+  }, [duration])
 
-  const hideBlackScene = async () => {
+  const hideBlackScene = React.useCallback(async () => {
     setOpacity(0)
     await new Promise((resolve) => setTimeout(resolve, duration))
-  }
+  }, [duration])
 
   return [showBlackScene, hideBlackScene, { opacity, duration }]
 }

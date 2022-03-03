@@ -132,6 +132,8 @@ const Index: NextPage = () => {
         <Image
           src="https://repobeats.axiom.co/api/embed/8d2203c93b7bb141dff3abc99bd0d0b3a58d85f9.svg"
           alt="变更情况总览"
+          width={813}
+          height={320}
         />
         <br />
         <br />

@@ -6,6 +6,7 @@ import Image from 'next/image'
 import type { NextPage } from 'next'
 import React from 'react'
 import getMusicChannel from '../src/backgroundMusic'
+import titleImage from '../public/images/Title.svg'
 import { useRouter } from 'next/router'
 import useUserAgent from '../src/userAgent'
 
@@ -51,11 +52,9 @@ const Page: NextPage = () => {
           }}
         >
           <Image
-            src="/images/Title.svg"
+            src={titleImage}
             alt="PhiCommunity"
             className="h-1/5 w-auto object-scale-down pointer-events-none"
-            width="555px"
-            height="187px"
           />
           <div
             className="m-10 text-center cursor-default pointer-events-none"

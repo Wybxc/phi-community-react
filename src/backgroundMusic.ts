@@ -7,7 +7,7 @@ import {
 /**
  * 背景音乐通道。
  */
-class Channel {
+export class Channel {
   /**
    * 通道使用的音频上下文。
    */
@@ -32,9 +32,16 @@ class Channel {
   /**
    * 获取并播放指定的音乐，如果当前正在播放，则停止并替换。
    * @param url 音乐的 url。
+   * @param loop 是否循环。
    * @param forceReplay 是否强制重新播放，即使当前正在播放的音乐与 url 相同。
+   * @param onEnded 播放结束时的回调。
    */
-  async fetchAndPlay(url: string, forceReplay: boolean = false) {
+  async fetchAndPlay(
+    url: string,
+    loop: boolean = true,
+    forceReplay: boolean = false,
+    onEnded?: () => void
+  ) {
     if (this.audioContext.state === 'suspended') this.resume()
 
     if (this.url === url && !forceReplay) return
@@ -47,9 +54,10 @@ class Channel {
     }
     const source = this.audioContext.createBufferSource()
     source.buffer = await this.audioContext.decodeAudioData(buffer)
-    source.loop = true
+    source.loop = loop
     source.connect(this.gain)
     source.start(0)
+    if (onEnded) source.addEventListener('ended', onEnded)
     this.source = source
   }
 
@@ -76,6 +84,13 @@ class Channel {
 
   set volume(value: number) {
     this.gain.gain.value = value
+  }
+
+  /**
+   * 当前时间码。
+   */
+  get time() {
+    return this.audioContext.currentTime
   }
 }
 

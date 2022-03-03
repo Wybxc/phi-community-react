@@ -10,6 +10,10 @@ export interface IBackgroundImageProps {
    * 图像的滤镜。
    */
   filter?: string
+  /**
+   * 图像的 zIndex。
+   */
+  zIndex?: number
 }
 
 /**
@@ -19,6 +23,7 @@ export interface IBackgroundImageProps {
 const BackgroundImage: React.FC<IBackgroundImageProps> = ({
   src = '/images/ElementSqare.Half.Size.webp',
   filter = 'blur(10px) brightness(0.5)',
+  zIndex = -10,
 }) => {
   return (
     <div
@@ -27,7 +32,7 @@ const BackgroundImage: React.FC<IBackgroundImageProps> = ({
         background: `#999 url(${src}) center center no-repeat fixed`,
         backgroundSize: 'cover',
         filter: filter,
-        zIndex: -10,
+        zIndex: zIndex,
       }}
     ></div>
   )

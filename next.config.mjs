@@ -7,6 +7,9 @@ const nextConfig = {
     dest: 'public',
     disable: process.env.NODE_ENV !== 'production',
   },
+  images: {
+    domains: ['repobeats.axiom.co'],
+  },
 }
 
 export default withPWA(nextConfig)

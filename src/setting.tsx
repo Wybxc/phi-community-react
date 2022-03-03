@@ -2,7 +2,7 @@ import { VscCheck as CheckIcon } from 'react-icons/vsc'
 import { NextRouter } from 'next/router'
 import React from 'react'
 
-export interface SlideConfig {
+export interface ISlideConfig {
   type: 'slide'
   title: string
   codename: string
@@ -11,14 +11,14 @@ export interface SlideConfig {
   offset?: number
 }
 
-export interface ToggleConfig {
+export interface IToggleConfig {
   type: 'toggle'
   title: string
   codename: string
   defaultValue?: boolean
 }
 
-export interface ButtonConfig {
+export interface IButtonConfig {
   type: 'button'
   title: string
   onClick: (
@@ -27,18 +27,18 @@ export interface ButtonConfig {
   ) => void
 }
 
-export interface PlaceholderConfig {
+export interface IPlaceholderConfig {
   type: 'placeholder'
   height: number
 }
 
-export type Config =
-  | SlideConfig
-  | ToggleConfig
-  | ButtonConfig
-  | PlaceholderConfig
+export type IConfig =
+  | ISlideConfig
+  | IToggleConfig
+  | IButtonConfig
+  | IPlaceholderConfig
 
-const settings: Config[] = [
+const settings: IConfig[] = [
   {
     type: 'placeholder',
     height: 5, // 防止最上面的选项跑出屏幕

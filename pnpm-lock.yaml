@@ -29,8 +29,6 @@ specifiers:
 
 dependencies:
   '@babel/core': 7.17.5
-  '@types/react-window': r2.cnpmjs.org/@types/react-window/1.8.5
-  '@types/ua-parser-js': r2.cnpmjs.org/@types/ua-parser-js/0.7.36
   next: 12.1.0_33bdac975a6e334c49640fab91e2abb4
   next-pwa: r2.cnpmjs.org/next-pwa/5.4.4_107ba0ad3f038707e8d655e0eed772b9
   rc-slider: r2.cnpmjs.org/rc-slider/9.7.5_react-dom@17.0.2+react@17.0.2
@@ -45,6 +43,8 @@ dependencies:
 devDependencies:
   '@types/node': r2.cnpmjs.org/@types/node/17.0.4
   '@types/react': r2.cnpmjs.org/@types/react/17.0.38
+  '@types/react-window': r2.cnpmjs.org/@types/react-window/1.8.5
+  '@types/ua-parser-js': r2.cnpmjs.org/@types/ua-parser-js/0.7.36
   autoprefixer: 10.4.2_postcss@8.4.7
   eslint: 8.10.0
   eslint-config-next: 12.1.0_01ac3c4e6b8d5746e32dfe5cc29a613b
@@ -2488,6 +2488,7 @@ packages:
     resolution: {integrity: sha512-rZ5drC/jWjrArrS8BR6SIr4cWpW09RNTYt9AMZo3Jwwif+iacXAqgVjm0B0Bv/S1jhDXKHqRVNCbACkJ89RAnQ==, registry: https://r.cnpmjs.org/, tarball: https://r2.cnpmjs.org/@types/prop-types/-/prop-types-15.7.4.tgz}
     name: '@types/prop-types'
     version: 15.7.4
+    dev: true
 
   r2.cnpmjs.org/@types/react-window/1.8.5:
     resolution: {integrity: sha512-V9q3CvhC9Jk9bWBOysPGaWy/Z0lxYcTXLtLipkt2cnRj1JOSFNF7wqGpkScSXMgBwC+fnVRg/7shwgddBG5ICw==, registry: https://r.cnpmjs.org/, tarball: https://r2.cnpmjs.org/@types/react-window/-/react-window-1.8.5.tgz}
@@ -2495,7 +2496,7 @@ packages:
     version: 1.8.5
     dependencies:
       '@types/react': r2.cnpmjs.org/@types/react/17.0.38
-    dev: false
+    dev: true
 
   r2.cnpmjs.org/@types/react/17.0.38:
     resolution: {integrity: sha512-SI92X1IA+FMnP3qM5m4QReluXzhcmovhZnLNm3pyeQlooi02qI7sLiepEYqT678uNiyc25XfCqxREFpy3W7YhQ==, registry: https://r.cnpmjs.org/, tarball: https://r2.cnpmjs.org/@types/react/-/react-17.0.38.tgz}
@@ -2505,6 +2506,7 @@ packages:
       '@types/prop-types': r2.cnpmjs.org/@types/prop-types/15.7.4
       '@types/scheduler': r2.cnpmjs.org/@types/scheduler/0.16.2
       csstype: r2.cnpmjs.org/csstype/3.0.10
+    dev: true
 
   r2.cnpmjs.org/@types/resolve/1.17.1:
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==, registry: https://r.cnpmjs.org/, tarball: https://r2.cnpmjs.org/@types/resolve/-/resolve-1.17.1.tgz}
@@ -2518,6 +2520,7 @@ packages:
     resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==, registry: https://r.cnpmjs.org/, tarball: https://r2.cnpmjs.org/@types/scheduler/-/scheduler-0.16.2.tgz}
     name: '@types/scheduler'
     version: 0.16.2
+    dev: true
 
   r2.cnpmjs.org/@types/trusted-types/2.0.2:
     resolution: {integrity: sha512-F5DIZ36YVLE+PN+Zwws4kJogq47hNgX3Nx6WyDJ3kcplxyke3XIzB8uK5n/Lpm1HBsbGzd6nmGehL8cPekP+Tg==, registry: https://r.cnpmjs.org/, tarball: https://r2.cnpmjs.org/@types/trusted-types/-/trusted-types-2.0.2.tgz}
@@ -2529,7 +2532,7 @@ packages:
     resolution: {integrity: sha512-N1rW+njavs70y2cApeIw1vLMYXRwfBy+7trgavGuuTfOd7j1Yh7QTRc/yqsPl6ncokt72ZXuxEU0PiCp9bSwNQ==, registry: https://r.cnpmjs.org/, tarball: https://r2.cnpmjs.org/@types/ua-parser-js/-/ua-parser-js-0.7.36.tgz}
     name: '@types/ua-parser-js'
     version: 0.7.36
-    dev: false
+    dev: true
 
   r2.cnpmjs.org/@webassemblyjs/ast/1.11.1:
     resolution: {integrity: sha512-ukBh14qFLjxTQNTXocdyksN5QdM28S1CxHt2rdskFyL+xFV7VremuBLVbmCePj+URalXBENx/9Lm7lnhihtCSw==, registry: https://r.cnpmjs.org/, tarball: https://r2.cnpmjs.org/@webassemblyjs/ast/-/ast-1.11.1.tgz}
@@ -3135,6 +3138,7 @@ packages:
     resolution: {integrity: sha512-2u44ZG2OcNUO9HDp/Jl8C07x6pU/eTR3ncV91SiK3dhG9TWvRVsCoJw14Ckx5DgWkzGA3waZWO3d7pgqpUI/XA==, registry: https://r.cnpmjs.org/, tarball: https://r2.cnpmjs.org/csstype/-/csstype-3.0.10.tgz}
     name: csstype
     version: 3.0.10
+    dev: true
 
   r2.cnpmjs.org/debug/2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==, registry: https://r.cnpmjs.org/, tarball: https://r2.cnpmjs.org/debug/-/debug-2.6.9.tgz}
